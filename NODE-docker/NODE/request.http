@@ -1,0 +1,33 @@
+//http://localhost:5000/users
+
+
+### POST http://localhost:5000/newuser/ HTTP/1.1
+### content-type: application/json
+
+### {
+### "name":"Cristian",
+### "surname": "Romero",
+### "email":"a@a.com",
+### "password": "password",
+### "phone": "123456789"
+
+### }
+    
+    
+   
+    
+    
+    
+
+    
+
+POST http://localhost:5000/login/ HTTP/1.1
+content-type: application/json
+
+{
+   
+    "email":"a@a.com",
+    "password": "password"      
+    
+
+}
