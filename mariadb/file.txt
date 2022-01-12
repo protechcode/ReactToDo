@@ -1,0 +1,10 @@
+mysql --host 127.0.0.1 -P ( 3306:3306 || 3307:3306 )-u root -p 
+>>password : (test || @Dockerfile ENV MYSQL_ROOT_PASSWORD)
+
+CREATE OR REPLACE DATABASE db1;
+
+USE db1;
+
+CREATE OR REPLACE TABLE users (id INT AUTO_INCREMENT PRIMARY KEY NOT NULL, name VARCHAR(100), surname VARCHAR(100), email VARCHAR(255) UNIQUE, password VARCHAR(255), phone VARCHAR(255), isAdmin BOOLEAN DEFAULT false);
+
+INSERT INTO users (name, surname, email, password, phone, isAdmin ) VALUES ( "Cristian", "Romero","a@a.com", "password", "123456789", true);
